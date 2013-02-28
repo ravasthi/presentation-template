@@ -17,6 +17,18 @@
 @import "compass/css3";
 @import "cssgrid-1140";
 
+// ----- Icon fonts
+$el-path: '/fonts/elusive/Elusive-Icons';
+$en-path: '/fonts/entypo/entypo';
+$es-path: '/fonts/entypo/entypo-social';
+$fa-path: '/fonts/font-awesome/fontawesome-webfont';
+$ti-path: '/fonts/typicons/typicons-regular-webfont';
+@import "elusive";
+@import "entypo";
+@import "entypo-social";
+@import "font-awesome";
+@import "typicons";
+
 // Basics
 @import "colors";
 @import "typography";

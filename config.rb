@@ -6,7 +6,7 @@ http_path = "/"
 
 css_dir = "styles-compiled"
 sass_dir = "styles"
-additional_import_paths = ["styles/basics", "styles/shared"]
+additional_import_paths = ["styles/basics", "styles/shared", "styles/shared/sass-icon-fonts"]
 
 images_dir = "images"
 javascripts_dir = "scripts"

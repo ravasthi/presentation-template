@@ -1,12 +1,101 @@
-/*-----[ feature 1 ]------------------------------------------------------------
-| Styles for an individual feature, page or section of the application/site.
-| Create a new stylesheet per feature or section. If the feature-specific styles
-| are too many to practically be in one file, create a new directory containing
-| styles for that feature:
-|
-|   _feature-1.scss
-|   feature-2/
-|     _sub-feature-1.scss
-|     _sub-feature-2.scss
-|   _feature-3.scss
+/*-----[ presentation ]---------------------------------------------------------
 */
+.presentation
+{
+  header.global
+  {
+    text-align: center;
+  }
+
+  .back-to-top
+  {
+    margin-left: $column-width;
+    font-size: $body-text-size;
+  }
+
+  blockquote
+  {
+    position: relative;
+    z-index: 5;
+    font-family: $secondary-text-family;
+    font-size: 1.5 * $body-text-line-height;
+    line-height: 2 * $body-text-line-height;
+
+    &:before
+    {
+      position: absolute;
+      z-index: -5;
+      top: 3 * $body-text-line-height;
+      left: $column-width;
+      font-size: 5em;
+      color: $greyish-white;
+      content: '“';
+    }
+  }
+
+  figure
+  {
+    @include photo;
+  }
+
+  iframe, video
+  {
+    @include box-sizing(border-box);
+    border: 1px solid $light-stroke;
+    max-width: 100% !important;
+  }
+
+  .footnotes
+  {
+    @include footnotes;
+  }
+
+  @media (min-width: 768px)
+  {
+    section
+    {
+      @include clearfix;
+
+      .column
+      {
+        @include box-sizing(border-box);
+        float: left;
+
+        &:first-of-type
+        {
+          width: 60%;
+          margin-right: 3%;
+        }
+
+        &:last-of-type
+        {
+          width: 37%;
+        }
+      }
+
+      &.reverse .column
+      {
+        &:first-of-type
+        {
+          width: 37%;
+          margin-right: 3%;
+        }
+
+        &:last-of-type
+        {
+          width: 60%;
+        }
+      }
+
+      &.equal .column
+      {
+        width: 48.5%;
+
+        &:first-of-type
+        {
+          margin-right: 3%;
+        }
+      }
+    }
+  }
+}

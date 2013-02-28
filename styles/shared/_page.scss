@@ -3,6 +3,10 @@
 */
 #page
 {
+  @include clearfix;
+  margin: $body-text-line-height $column-width;
+  max-width: $page-width;
+
   .annotation,
   .fine-print,
   .form-help
@@ -20,11 +24,16 @@
 
   .subtitle
   {
-    font-weight: normal;
+    @include large-text;
   }
 
   .subheading
   {
     font-weight: bold;
+  }
+
+  @media (min-width: 600px)
+  {
+    margin: $section-spacing auto;
   }
 }

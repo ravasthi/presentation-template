@@ -91,6 +91,12 @@
   line-height : $subheading-text-line-height;
 }
 
+@mixin large-text
+{
+  font-size   : $large-text-size;
+  line-height : $large-text-line-height;
+}
+
 @mixin body-text
 {
   font-size   : $body-text-size;
@@ -109,3 +115,44 @@
   line-height : $small-text-line-height;
 }
 
+/*----------[ photos/images ]---------------------------------------------------
+*/
+@mixin photo
+{
+  display: inline-block;
+  @include single-box-shadow($silver, 0, 2px, 5px);
+  padding: 10px;
+
+  img
+  {
+    border: 1px solid darken($greyish-white, 3);
+    max-width: 100%;
+  }
+}
+
+/*----------[ footnotes ]-------------------------------------------------------
+*/
+@mixin footnotes
+{
+  .footnote
+  {
+    margin-bottom: $secondary-text-line-height;
+    padding-left: $column-width;
+    @include secondary-text;
+
+    p
+    {
+      margin: 0 0 $secondary-text-line-height;
+    }
+  }
+
+  .footnote-indicator
+  {
+    float: left;
+    display: inline-block;
+    margin-left: -$column-width;
+    width: 0.75 * $column-width;
+    text-align: right;
+    color: $leaf-green;
+  }
+}

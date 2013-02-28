@@ -9,3 +9,6 @@ $gutter-width     : 1.5 * $column-width;
 
 $vertical-nudge   : $body-text-line-height / 4;
 $section-spacing  : 2 * $body-text-line-height;
+
+$content-width    : 40 * $body-text-line-height;
+$page-width       : $content-width + 2 * $gutter-width;

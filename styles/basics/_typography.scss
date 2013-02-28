@@ -1,6 +1,7 @@
 /*-----[ typography ]-----------------------------------------------------------
 */
 $body-text-family              : "Proxima Nova", Avenir, "DejaVu Sans", "Bitstream Vera Sans", Tahoma, Verdana, sans-serif;
+$secondary-text-family         : Alegreya, Calluna, "Garamond Pro", "DejaVu Serif", Georgia, Times, serif;
 $monospace-text-family         : Consolas, Monaco, "Lucida Console", monospace;
 
 $body-text-size                : 18px;
@@ -12,8 +13,11 @@ $secondary-text-line-height    : 18px;
 $small-text-size               : 12px;
 $small-text-line-height        : $secondary-text-line-height;
 
-$page-heading-text-size        : 36px;
+$large-text-size               : 21px;
+$large-text-line-height        : 1.25 * $secondary-text-line-height;
+
+$page-heading-text-size        : 42px;
 $page-heading-text-line-height : 2 * $body-text-line-height;
 
-$subheading-text-size          : 21px;
+$subheading-text-size          : 30px;
 $subheading-text-line-height   : 1.5 * $body-text-line-height;

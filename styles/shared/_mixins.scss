@@ -136,6 +136,7 @@
 {
   .footnote
   {
+    @include clearfix;
     margin-bottom: $secondary-text-line-height;
     padding-left: $column-width;
     @include secondary-text;

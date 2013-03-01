@@ -7,10 +7,22 @@
     text-align: center;
   }
 
+  section > h2
+  {
+    position: relative;
+  }
+
   .back-to-top
   {
-    margin-left: $column-width;
-    font-size: $body-text-size;
+    font-size: $large-text-size;
+    text-decoration: none;
+    @include fa-icon(circle-arrow-up, $color: lighten($silver, 5), $top: -2px);
+
+    &:hover, &:active,
+    &:hover:before, &:active:before
+    {
+      color: $bright-yellow;
+    }
   }
 
   blockquote
@@ -52,6 +64,12 @@
 
   @media (min-width: 768px)
   {
+    .back-to-top
+    {
+      position: absolute;
+      left: -($column-width + $horizontal-nudge);
+    }
+
     section
     {
       @include clearfix;

@@ -92,12 +92,13 @@ h3
 {
   margin: $body-text-line-height 0 0;
   color: $teal;
+  @include large-text;
 }
 
-// For large headings, use ligatures if available.
 h1, h2, h3
 {
   font-weight: normal;
+  // For large headings, use ligatures if available.
   text-rendering: optimizeLegibility;
 
   & + blockquote,

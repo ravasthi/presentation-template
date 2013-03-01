@@ -153,6 +153,7 @@
     display: inline-block;
     margin-left: -$column-width;
     width: 0.75 * $column-width;
+    font-weight: bold;
     text-align: right;
     color: $leaf-green;
   }

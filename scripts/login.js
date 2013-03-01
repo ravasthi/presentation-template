@@ -8,9 +8,9 @@
 ------------------------------------------------------------------------------*/
 
 // Establish namespace. Change to match the name of your application.
-var FiftyfiveExample = window.FiftyfiveExample ? window.FiftyfiveExample : {};
+var EffectivePresentations = window.EffectivePresentations ? window.EffectivePresentations : {};
 
-FiftyfiveExample.login = {
+EffectivePresentations.login = {
     init: function() {
         $("input[placeholder]").forminputplaceholdertextwidget();
     }
@@ -18,6 +18,6 @@ FiftyfiveExample.login = {
 
 (function($) {
     $(function() {
-        FiftyfiveExample.login.init();
+        EffectivePresentations.login.init();
     });
 })(jQuery);

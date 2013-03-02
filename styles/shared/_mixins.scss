@@ -41,6 +41,8 @@
   }
 }
 
+/*----------[ lists ]-----------------------------------------------------------
+*/
 @mixin inline-list($spacing: 0.33em)
 {
   display: inline;
@@ -73,6 +75,62 @@
     {
       margin-right: 0;
     }
+  }
+}
+
+@mixin list-with-alternate-bullets($color)
+{
+  &
+  {
+    margin-left: 0;
+    list-style-type: none;
+  }
+
+  & > li
+  {
+    padding-left: 1.5 * $column-width;
+  }
+
+  & > li:before
+  {
+    display: inline-block;
+    margin-left: -(1.5 * $column-width);
+    margin-right: $column-width / 2;
+    width: $column-width;
+    text-align: right;
+    color: $color;
+  }
+}
+
+@mixin ordered-list-with-colored-numbers($color: $silver)
+{
+  &
+  {
+    @include list-with-alternate-bullets($color);
+    counter-reset: item;
+  }
+
+  & > li
+  {
+    counter-increment: item;
+  }
+
+  & > li:before
+  {
+    content: counter(item) ".";
+  }
+}
+
+@mixin unordered-list-with-colored-bullets($color: $silver)
+{
+  &
+  {
+    @include list-with-alternate-bullets($color);
+  }
+
+  li:before
+  {
+    content: "✳";
   }
 }
 

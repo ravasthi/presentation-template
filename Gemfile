@@ -3,8 +3,8 @@ source "http://rubygems.org"
 gem 'rake'
 
 # compass
-gem "compass", ">= 0.12"
-gem 'guard-compass', :git => "git://github.com/guard/guard-compass.git"
+gem "compass", "~> 1.0.0.alpha.19"
+gem 'guard-compass' #, :git => "git://github.com/guard/guard-compass.git"
 gem "rb-fsevent"
 gem "sassy-buttons"
 gem "sass"

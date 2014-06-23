@@ -15,6 +15,7 @@
 a
 {
   color: $link;
+  text-decoration: none;
 
   &:visited
   {
@@ -25,6 +26,7 @@ a
   &:active
   {
     color: darken($link, 10);
+    text-decoration: underline;
   }
 }
 

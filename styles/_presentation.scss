@@ -19,9 +19,9 @@
 
   .back-to-top
   {
+    @include transition(color 0.3s ease-in-out 0);
     font-size: $large-text-size;
     text-decoration: none;
-    // @include fa-icon(arrow-circle-up, $color: lighten($silver, 5), $top: -2px);
 
     &:before
     {

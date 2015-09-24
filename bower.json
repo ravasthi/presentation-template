@@ -1,0 +1,24 @@
+{
+  "name": "presentation-template",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ravasthi/presentation-template",
+  "authors": [
+    "Richa Avasthi <ravasthi@gmail.com>"
+  ],
+  "description": "This responsive presentation template is based on the principles outlined in Edward Tufte's course on presenting data and information.",
+  "main": "index.html",
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "fiftyfive-util-js": "git@github.com:55minutes/fiftyfive-util-js.git",
+    "font-awesome": "~4.3.0"
+  }
+}

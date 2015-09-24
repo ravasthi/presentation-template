@@ -3,8 +3,9 @@ source "http://rubygems.org"
 gem 'rake'
 
 # compass
-gem "compass", "~> 1.0.0.alpha.19"
-gem 'guard-compass' #, :git => "git://github.com/guard/guard-compass.git"
+gem "compass", "~> 1.0.0"
+gem 'susy'
+gem 'guard-compass'
 gem "rb-fsevent"
 gem "sassy-buttons"
 gem "sass"
@@ -16,5 +17,7 @@ gem 'rack-livereload'
 # Pow
 gem 'powder'
 
-# vendored assets
-gem "vendorer"
+# sprockets
+gem 'guard-sprockets'
+gem 'uglifier'
+gem 'therubyracer'

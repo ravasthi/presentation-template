@@ -7,15 +7,16 @@
 
   .message
   {
-    position: relative;
     margin-bottom: $vertical-nudge;
     padding: $vertical-nudge $column-width / 2;
     padding-left: 2 * $column-width;
 
     &:before
     {
-      margin-left: -($column-width + $horizontal-nudge);
-      margin-right: $horizontal-nudge;
+      display: inline-block;
+      position: relative;
+      margin-left: -(1.5 * $column-width);
+      margin-right: 0.5 * $column-width;
       width: $column-width;
     }
 
@@ -23,22 +24,36 @@
     {
       background-color: $success-feedback-bg;
       color: $success-feedback;
-      @include fa-icon(check);
+
+      &:before
+      {
+        @include fa-icon();
+        @extend .fa-check;
+      }
     }
 
     &.warning
     {
       background-color: $warning-feedback-bg;
       color: $warning-feedback;
-      @include fa-icon(asterisk);
+
+      &:before
+      {
+        @include fa-icon();
+        @extend .fa-asterisk;
+      }
     }
 
     &.error
     {
       background-color: $error-feedback-bg;
       color: $error-feedback;
-      @include fa-icon(exclamation-triangle);
+
+      &:before
+      {
+        @include fa-icon();
+        @extend .fa-exclamation-triangle;
+      }
     }
   }
 }
-

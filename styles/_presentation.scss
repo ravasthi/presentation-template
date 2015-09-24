@@ -21,7 +21,14 @@
   {
     font-size: $large-text-size;
     text-decoration: none;
-    @include fa-icon(arrow-circle-up, $color: lighten($silver, 5), $top: -2px);
+    // @include fa-icon(arrow-circle-up, $color: lighten($silver, 5), $top: -2px);
+
+    &:before
+    {
+      @include fa-icon();
+      @extend .fa-arrow-circle-up;
+      color: lighten($silver, 5);
+    }
 
     &:hover, &:active,
     &:hover:before, &:active:before

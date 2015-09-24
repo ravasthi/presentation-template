@@ -10,41 +10,31 @@
 | of the directory organization.
 ------------------------------------------------------------------------------*/
 
-// Reset
-@import "reset";
+// Reset - use Compass' reset mixins
+@import 'compass/reset';
 
 // Third-party mixins
-@import "compass/css3";
-@import "cssgrid-1140";
+@import 'compass/css3';
+@import 'susy';
 
 // ----- Icon fonts
-$el-path: '/fonts/elusive/Elusive-Icons';
-$en-path: '/fonts/entypo/entypo';
-$es-path: '/fonts/entypo/entypo-social';
-$fa-path: '/fonts/font-awesome/fontawesome-webfont';
-$ti-path: '/fonts/typicons/typicons-regular-webfont';
-@import "elusive";
-@import "entypo";
-@import "entypo-social";
-@import "font-awesome";
-@import "typicons";
+@import 'font-awesome';
 
 // Basics
-@import "colors";
-@import "typography";
-@import "grid";
+@import 'colors';
+@import 'typography';
+@import 'grid';
 
 // Shared
-@import "sassybuttons";
-@import "mixins";
-@import "foundation";
-@import "page";
-@import "forms";
-@import "alerts";
-@import "pagination";
-@import "header";
-@import "footer";
+@import 'sassybuttons';
+@import 'shared/mixins'; // Specify path since FA also has a _mixins.scss file
+@import 'foundation';
+@import 'page';
+@import 'forms';
+@import 'alerts';
+@import 'pagination';
+@import 'header';
+@import 'footer';
 
 // Feature-/page-specific
-@import "style-guide";
 @import "presentation";

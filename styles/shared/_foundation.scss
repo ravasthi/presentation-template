@@ -54,7 +54,7 @@ body
   ** size you feel is effective at those screen sizes. REMOVE IT if you want
   ** iPhone to automatically resize the text.
   */
-  @media (max-width: 500px)
+  @media (max-width: $screen-xs-max)
   {
     -webkit-text-size-adjust: 100%;
   }

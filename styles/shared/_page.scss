@@ -32,7 +32,7 @@
     font-weight: bold;
   }
 
-  @media (min-width: 600px)
+  @media (min-width: $screen-sm-min)
   {
     margin: $section-spacing auto;
     padding: 0 $gutter-width;

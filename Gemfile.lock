@@ -38,6 +38,8 @@ GEM
       em-websocket (~> 0.5)
       guard (~> 2.8)
       multi_json (~> 1.8)
+    guard-pow (2.0.0)
+      guard (~> 2.0)
     guard-sprockets (1.1.0)
       execjs (~> 2.0)
       guard (~> 2.0)
@@ -98,6 +100,7 @@ DEPENDENCIES
   compass (~> 1.0.0)
   guard-compass
   guard-livereload
+  guard-pow
   guard-sprockets
   powder
   rack-livereload

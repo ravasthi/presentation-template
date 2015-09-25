@@ -15,6 +15,7 @@ gem 'guard-livereload'
 gem 'rack-livereload'
 
 # Pow
+gem 'guard-pow'
 gem 'powder'
 
 # sprockets

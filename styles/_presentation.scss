@@ -73,6 +73,22 @@
     max-width: 100% !important;
   }
 
+  .column
+  {
+    blockquote, ol, ul, p
+    {
+      &:first-child
+      {
+        margin-top: 0;
+      }
+
+      &:last-child
+      {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .sources ul
   {
     @include unordered-list-with-colored-bullets;
@@ -109,19 +125,6 @@
         &:last-of-type
         {
           width: 37%;
-        }
-
-        ol, ul, p
-        {
-          &:first-child
-          {
-            margin-top: 0;
-          }
-
-          &:last-child
-          {
-            margin-bottom: 0;
-          }
         }
       }
 
